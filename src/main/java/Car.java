@@ -3,84 +3,72 @@
      * @author Aathithyan
      * @version 1.0
      */
-class Car {
-
-    private String make;
-    private String model;
-    private int year;
-    private double price;
+class Car{
+    String make;
+    String model;
+    int year;
+    double price;
 
     /**
-     * Sets the parameters to that of the instance variables
-     * @param make the car's make
-     * @param model the car's model
-     * @param year the car's year
-     * @param price the car's price
+     * Constructor of the Car class
+     * @param _make The make of the car
+     * @param _model The model of the car
+     * @param _year The year of the car
+     * @param _price The price of the car
      */
-    public Car(String make, String model, int year, double price) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.price = price;
+    public Car(String _make, String _model, int _year, double _price){
+        make = _make;
+        model = _model;
+        year = _year;
+        price = _price;
     }
 
     /**
-     * Gets the car's make
+     * Gets the make of the car
+     * @return The make of the car
      */
-    public String getMake() {
-        return this.make;
-    }
+    public String getMake(){return make;}
+    
+    /**
+     * Gets the model of the car
+     * @return The model of the car
+     */
+    public String getModel(){return model;}
+    
+    /**
+     * Gets the year of the car
+     * @return The year of the car
+     */
+    public int getYear(){return year;}
+    
+    /**
+     * Gets the price of the car
+     * @return The price of the car
+     */
+    public double getPrice(){return price;}
 
     /**
-     * Gets the car's model
+     * Sets the make of the Car
+     * @param _make The make to be set
      */
-    public String getModel() {
-        return this.model;
-    }
-
+    public void setMake(String _make){make = _make;}
+    
     /**
-     * Gets the car's year
+     * Sets the model of the Car
+     * @param _model The model to be set
      */
-    public int getYear() {
-        return this.year;
-    }
-
+    public void setModel(String _model){model = _model;}
+    
     /**
-     * Gets the car's price
+     * Sets the year of the Car
+     * @param _year The year to be set
      */
-    public double getPrice() {
-        return this.price;
-    }
-
+    public void setYear(int _year){year = _year;}
+    
     /**
-     * Sets a new value for the car's make
-     * @param newMake the new value that make will be set to
+     * Sets the price of the Car
+     * @param _price The price to be set
      */
-    public void setMake(String newMake) {
-        this.make = newMake;
-    }
-
-    /**
-     * Sets a new value for the car's model
-     * @param newModel the new value that model will be set to
-     */
-    public void setModel(String newModel) {
-        this.model = newModel;
-    } 
-
-    /**
-     * Sets a new value for the car's year
-     * @param newYear the new value that year will be set to
-     */
-    public void setYear(int newYear) {
-        this.year = newYear;
-    }
-
-    /**
-     * Sets a new value for the car's price
-     * @param newPrice the new value that price will be set to
-     */
-    public void setPrice(double newPrice) {
-        this.price = newPrice;
-    }
+    public void setPrice(double _price){price = _price;}
+    
 }

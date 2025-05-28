@@ -3,63 +3,57 @@
     * @author Aathithyan Thavachselvan
     * @version 1.0
     */
-class Dog {
-
-    private String name;
-    private String breed;
-    private int weight;
+class Dog{
+    String name;
+    String breed;
+    int weight;
 
     /**
-     * Sets the parameter values to that of the instance varaibles
-     * @param name the dog's name
-     * @param breed the dog's breed
-     * @param weight the dog's weight
+     * Constructor of class Dog
+     * @param _name Name of the Dog
+     * @param _breed Breed of the Dog
+     * @param _weight Weight of the Dog
      */
-    public Dog(String name, String breed, int weight) {
-        this.name = name;
-        this.breed = breed;
-        this.weight = weight;
+    public Dog(String _name, String _breed, int _weight){
+        name = _name;
+        breed = _breed;
+        weight = _weight;
     }
 
     /**
-     * Gets the dog's name
+     * Gets the name of the Dog
+     * @return The name of the Dog
      */
-    public String getName() {
-        return this.name;
-    }
+    public String getName(){return name;}
+    
+    /**
+     * Gets the breed of the Dog
+     * @return The breed of the Dog
+     */
+    public String getBreed(){return breed;}
+    
+    /**
+     * Gets the weight of the Dog
+     * @return The weight of the Dog
+     */
+    public int getWeight(){return weight;}
+    
 
     /**
-     * Gets the dog's breed
+     * Sets the name of the Dog
+     * @param _name The name to be set
      */
-    public String getBreed() {
-        return this.breed;
-    }
-
+    public void setName(String _name){name = _name;}
+    
     /**
-     * Gets the dog's weight
+     * Sets the breed of the Dog
+     * @param _breed The breed to be set
      */
-    public int getWeight() {
-        return this.weight;
-    }
-
+    public void setBreed(String _breed){breed = _breed;}
+    
     /**
-     * Sets a new value for dog's name
+     * Sets the weight of the Dog
+     * @param _weight The weight to be set
      */
-    public void setName(String newName) {
-        this.name = newName;
-    }
-
-    /**
-     * Sets a new value for dog's breed
-     */
-    public void setBreed(String newBreed) {
-        this.breed = newBreed;
-    }
-
-    /**
-     * Sets a new value for dog's weight
-     */
-    public void setWeight(int newWeight) {
-        this.weight = newWeight;
-    }
+    public void setWeight(int _weight){weight = _weight;}
 }

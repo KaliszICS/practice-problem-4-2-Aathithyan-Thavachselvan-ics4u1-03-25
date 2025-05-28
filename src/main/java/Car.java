@@ -1,6 +1,6 @@
     /**
      * Gives the make, model, year, and price of a car
-     * @author Aarooran
+     * @author Aathithyan
      * @version 1.0
      */
 class Car {
